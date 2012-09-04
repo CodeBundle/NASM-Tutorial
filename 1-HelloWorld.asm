@@ -27,8 +27,8 @@ _start:						;Start of Script
 	mov eax, 4				;Kernel Function = sys_write
 	mov ebx, 1					;Standard output file descriptor
 	mov ecx, msg					;Message to Print
-	mov edx, len				;Number of Characters to print
+	mov edx, len					;Number of Characters to print
 	int 80h						;Call the Kernel
 	mov eax, 1				;Kernel Function = sys_exit
 	mov ebx, 0					;Error code (0 = no error)
-	int 80h					;Call the Kernel
+	int 80h						;Call the Kernel
