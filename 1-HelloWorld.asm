@@ -17,7 +17,7 @@
 
 SECTION .data					;Constants
 	msg: 	db "Hello World!", 10		;msg = Hello World(new Line)
-	len: 	equ $-msg			;msglen = Length of variable "msg"
+	len: 	equ $-msg			;msglen = Length of constant "msg"
 	
 
 SECTION .text					;Code
